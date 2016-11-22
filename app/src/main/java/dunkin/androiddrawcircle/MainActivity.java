@@ -92,10 +92,10 @@ class MyView extends ImageView {
 
         Log.d(TAG, "x y" + x + " " + y);
         size = 300;
-        rect.set(x, x + size, y, y + size + 200);
+        rect.set(x, x + size, y, y + size);
         float startAngle, sweepAngle;
-        startAngle = mAngle;
-        sweepAngle = 30;
+        startAngle = -(mAngle-23);
+        sweepAngle = 45;
         canvas.drawArc(rect, startAngle, sweepAngle, true, Pnt);
 
     }
